@@ -7,6 +7,7 @@ import { BorderRadiusPresenter } from './presenter/BorderRadiusPresenter';
 import { ColorPresenter } from './presenter/ColorPresenter';
 import { EasingPresenter } from './presenter/EasingPresenter';
 import { EmptyPresenter } from './presenter/EmptyPresenter';
+import { FontPresenter } from './presenter/FontPresenter';
 import { FontFamilyPresenter } from './presenter/FontFamilyPresenter';
 import { FontSizePresenter } from './presenter/FontSizePresenter';
 import { FontWeightPresenter } from './presenter/FontWeightPresenter';
@@ -36,6 +37,8 @@ export const TokenPreview = ({ token }: TokenPreviewProps) => {
       return <ColorPresenter token={token} />;
     case TokenPresenter.EASING:
       return <EasingPresenter token={token} />;
+    case TokenPresenter.FONT:
+      return <FontPresenter token={token} />;
     case TokenPresenter.FONT_FAMILY:
       return <FontFamilyPresenter token={token} />;
     case TokenPresenter.FONT_SIZE:

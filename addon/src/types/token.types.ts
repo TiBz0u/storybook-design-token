@@ -15,6 +15,7 @@ export enum TokenPresenter {
   BORDER_RADIUS = 'BorderRadius',
   COLOR = 'Color',
   EASING = 'Easing',
+  FONT = 'Font',
   FONT_FAMILY = 'FontFamily',
   FONT_SIZE = 'FontSize',
   FONT_WEIGHT = 'FontWeight',
